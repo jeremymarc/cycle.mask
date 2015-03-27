@@ -1,0 +1,65 @@
+.cycle_transition_mask {
+  -webkit-animation: penmask 1.8s steps(29) 0s;
+  animation: penmask 1.8s steps(29) 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse;
+  -webkit-mask: url(img/mask.png) no-repeat center center;
+  -ms-mask: url(img/mask.png) no-repeat center center;
+  -moz-mask: url(img/mask.png) no-repeat center center;
+  -o-mask: url(img/mask.png) no-repeat center center;
+  mask: url(img/mask.png) no-repeat center center;
+  -webkit-mask-size: 3000% 100%;
+  -ms-mask-size: 3000% 100%;
+  -moz-mask-size: 3000% 100%;
+  -o-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  -webkit-mask-position: 0 0;
+  -ms-mask-position: 0 0;
+  -moz-mask-position: 0 0;
+  -o-mask-position: 0 0;
+  mask-position: 0 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+@-webkit-keyframes penmask {
+  from {
+    -webkit-mask-position: 0 0;
+    -ms-mask-position: 0 0;
+    -moz-mask-position: 0 0;
+    -o-mask-position: 0 0;
+    mask-position: 0 0
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    -ms-mask-position: 100% 0;
+    -moz-mask-position: 100% 0;
+    -o-mask-position: 100% 0;
+    mask-position: 100% 0
+  }
+}
+
+@keyframes penmask {
+  from {
+    -webkit-mask-position: 0 0;
+    -ms-mask-position: 0 0;
+    -moz-mask-position: 0 0;
+    -o-mask-position: 0 0;
+    mask-position: 0 0
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    -ms-mask-position: 100% 0;
+    -moz-mask-position: 100% 0;
+    -o-mask-position: 100% 0;
+    mask-position: 100% 0
+  }
+}
